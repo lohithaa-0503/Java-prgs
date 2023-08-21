@@ -1,0 +1,10 @@
+import java.util.*;
+public class BtoD{
+public static void main(String[] args){
+Scanner sc1=new Scanner(System.in);
+System.out.print("enter binary no:\n");
+String b=sc1.next();
+Integer d=Integer.valueOf(b,2);
+System.out.print("Decimal no:"+d+"\n");
+}
+}
