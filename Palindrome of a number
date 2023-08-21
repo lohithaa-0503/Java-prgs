@@ -1,0 +1,21 @@
+import java.util.*;
+public class Palindrome{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter a no\n");
+int n=sc.nextInt();
+int n1=n,rv=0;
+while(n1>0){
+int r=0;
+r=n1%10;
+rv=rv*10+r;
+n1=n1/10;
+}
+if(rv==n){
+System.out.print(n+" is a palindrome no\n");
+}
+else{
+System.out.print(n+" is not a palindrome no\n");
+}
+}
+}
