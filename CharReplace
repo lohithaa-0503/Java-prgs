@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class CharReplace{
+
+public static void main(String[] args){
+
+Scanner sc1=new Scanner(System.in);
+
+System.out.print("enter a string:\n");
+
+String s1=sc1.nextLine();
+
+System.out.print("enter a Character to search:\n");
+
+Character c1=sc1.next().charAt(0);
+
+System.out.print("enter a Character to replace:\n");
+
+Character c2=sc1.next().charAt(0);
+
+String s2=s1.replace(c1,c2);
+
+System.out.print("New string:"+s2+"\n");
+
+}
+
+}
