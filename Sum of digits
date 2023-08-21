@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Sum{
+
+public static void main(String[] args){
+
+Scanner sc1=new Scanner(System.in);
+
+System.out.println("no:");
+
+int n=sc1.nextInt();
+
+int rem=0,s=0;
+
+while(n!=0){
+
+rem=n%10;
+
+s+=rem;
+
+n=n/10;
+
+}
+
+System.out.println("Sum of digits: "+s);
+
+}
+
+}
+
+
