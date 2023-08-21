@@ -1,0 +1,24 @@
+import java.util.*;
+public class Ascii{
+public static void main(String[] args){
+Scanner sc1=new Scanner(System.in);
+System.out.print("enter a Character:\n");
+Character c=sc1.next().charAt(0);
+int c1=(int)c;
+System.out.print("Ascii value of Character:"+c1+"\n");
+if (Character.isLetter(c)){
+if (Character.isUpperCase(c)){
+System.out.print("It's an uppercase Letter\n");
+}
+else{
+System.out.print("Its a lowercase Letter\n");
+}
+}
+else if(Character.isDigit(c)){
+System.out.print("It's a Digit\n");
+}
+else{
+System.out.print("It's a Special character\n");
+}
+}
+}
