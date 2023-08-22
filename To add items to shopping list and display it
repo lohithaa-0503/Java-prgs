@@ -1,0 +1,69 @@
+import java.util.*;
+
+public class ShoppingList{
+
+public static void main(String[] args){
+
+Scanner sc1=new Scanner(System.in);
+
+List<String>l=new ArrayList<String>();
+
+while(true){
+
+System.out.println("enter your choice:\n1.Add item\n2.Display list\n3.exit");
+
+int c=sc1.nextInt();
+
+sc1.nextLine();
+
+switch(c){
+
+case 1:
+
+System.out.println("enter the item:");
+
+String s=sc1.nextLine();
+
+l.add(s);
+
+break;
+
+case 2:
+
+if(l.isEmpty()){
+
+System.out.println("No items in the list");
+
+}
+
+else{ 
+
+for(String item:l){  
+
+System.out.println(item);  
+
+}
+
+}
+
+break;
+
+case 3:
+
+System.out.println("Exiting the List"); 
+
+sc1.close();
+
+return;
+
+default:
+
+System.out.println("enter a valid choice");
+
+}
+
+}
+
+}
+
+}
