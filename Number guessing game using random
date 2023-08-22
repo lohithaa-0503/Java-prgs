@@ -1,0 +1,25 @@
+import java.util.*;
+public class GuessingGame{
+public static void main(String[] args){
+Scanner sc1=new Scanner(System.in);
+Random rnd=new Random();
+int r=rnd.nextInt(100);
+do{
+System.out.println("enter your guess between 0 and 99:");
+int g=sc1.nextInt();
+if(g==r){
+System.out.println("Congrats!!Your guess is right");
+break;
+}
+else if(g>r){
+System.out.println("Too high");
+}
+else if(g<r){
+System.out.println("Too low");
+}
+else{
+System.out.println("enter a valid guess");
+}
+}while(true);
+}
+}
